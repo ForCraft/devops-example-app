@@ -3,7 +3,7 @@ name: release
 on:
   create:
     tags:
-      - v1
+      - v*
 
 env:
   APP_IMAGE_NAME: nastasiapn2006/devops-example-app
