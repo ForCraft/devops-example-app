@@ -6,7 +6,7 @@ on:
       - "main"
 
 env:
-  TEST_TAG: nastasiapn/devops-example-app:test
+  TEST_TAG: nastasiapn2006/devops-example-app:test
 
 jobs:
   docker:
@@ -34,7 +34,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: nastasiapn/devops-example-app:latest
+          tags: nastasiapn2006/devops-example-app:latest
 
       - name: Build and push caddy
         uses: docker/build-push-action@v2
@@ -42,4 +42,4 @@ jobs:
           context: .
           file: services/caddy/Dockerfile
           push: true
-          tags: nastasiapn/devops-example-caddy:latest
+          tags: nastasiapn2006/devops-example-caddy:latest
